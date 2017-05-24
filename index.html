@@ -1,147 +1,294 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 
 <head>
-    <title>Prashanth Koushik</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        body {
-            font: 20px Montserrat, sans-serif;
-            line-height: 1.8;
-            color: #f5f6f7;
-        }
-        
-        p {
-            font-size: 16px;
-        }
-        
-        .margin {
-            margin-bottom: 45px;
-        }
-        
-        .bg-1 {
-            background-color: #474e5d;
-            /* Green */
-            color: #ffffff;
-        }
-        
-        .bg-2 {
-            background-color: #1abc9c;
-            /* Dark Blue */
-            color: #ffffff;
-        }
-        
-        .bg-3 {
-            background-color: #ffffff;
-            /* White */
-            color: #555555;
-        }
-        
-        .bg-4 {
-            background-color: #2f2f2f;
-            /* Black Gray */
-            color: #fff;
-        }
-        
-        .container-fluid {
-            padding-top: 70px;
-            padding-bottom: 70px;
-        }
-        
-        .navbar {
-            padding-top: 15px;
-            padding-bottom: 15px;
-            border: 0;
-            border-radius: 0;
-            margin-bottom: 0;
-            font-size: 12px;
-            letter-spacing: 5px;
-        }
-        
-        .navbar-nav li a:hover {
-            color: #1abc9c !important;
-        }
-    </style>
+    <title>Prashanth Koushik</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <script src="js/modernizr.js"></script>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/raphael.js" type="text/javascript"></script>
+    <script src="js/init_2.js" type="text/javascript"></script>
+    <link rel="shortcut icon" href="favicon.png">
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-default">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-                <a class="navbar-brand" href="#">Home</a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="work.html">Work Experience</a></li>
-                    <li><a href="project.html">Projects</a></li>
-                    <li><a href="about.html">About Me</a></li>
+    <header id="home">
+        <nav id="nav-wrap">
+            <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+            <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+            <ul id="nav" class="nav">
+                <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+                <li><a class="smoothscroll" href="#about">About</a></li>
+                <li><a class="smoothscroll" href="#resume">Resume</a></li>
+                <li><a class="smoothscroll" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="row banner">
+            <div class="banner-text">
+                <h1 class="responsive-headline">I'm Prashanth Koushik.</h1>
+                <h3>I'm a rising sophomore at Purdue University pursuing a bachelor's degree in <span>Computer Science</span>, and a minor in <span>Mathematics</span>. Keep <a class="smoothscroll" href="#about"> scrolling</a> to learn more <a class="smoothscroll"
+                        href="#about">about me</a>.
+                </h3>
+                <ul class="social">
+                    <li><a href="https://www.linkedin.com/in/prashanth-koushik-84a042134/"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="mailto:pkoushik11@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                    <li><a href="https://github.com/pkoushik"><i class="fa fa-github"></i></a></li>
                 </ul>
             </div>
         </div>
-    </nav>
-
-    <!-- First Container -->
-    <div class="container-fluid bg-1 text-center">
-        <h3 class="margin">Welcome</h3>
-        <img src="https://scontent-ord1-1.xx.fbcdn.net/v/t1.0-9/13244603_778344965636201_4953581656838962720_n.jpg?oh=1dc6ea2dcbe8dd40c51d955ac3f2ad4f&oe=597332A0" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
-        <h3>I'm Prashanth Koushik</h3>
-    </div>
-
-    <!-- Second Container -->
-    <div class="container-fluid bg-2 text-center">
-        <h3 class="margin">Who am I?</h3>
-        <p>I am currently a freshman Purdue University pursuing a bachelor's degree in Computer Science, and possibly a minor in Mathematics.</p>
-        <!--<a href="index.html" class="btn btn-default btn-lg">
-            <span class="glyphicon glyphicon-search"></span> Search
-        </a>-->
-    </div>
-
-    <!-- Third Container (Grid) -->
-    <div class="container-fluid bg-3 text-center">
-        <h3 class="margin">Stuff</h3><br>
+        <p class="scrolldown">
+            <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+        </p>
+    </header>
+    <section id="about">
         <div class="row">
-            <div class="col-sm-4">
-                <p>some stuff</p>
-                <img src="..." class="img-responsive margin" style="width:100%" alt="Image">
+            <div class="three columns">
+                <img class="profile-pic" src="https://scontent-ord1-1.xx.fbcdn.net/v/t1.0-9/13244603_778344965636201_4953581656838962720_n.jpg?oh=1dc6ea2dcbe8dd40c51d955ac3f2ad4f&oe=597332A0" alt="" />
             </div>
-            <div class="col-sm-4">
-                <p>some stuff</p>
-                <img src="..." class="img-responsive margin" style="width:100%" alt="Image">
-            </div>
-            <div class="col-sm-4">
-                <p>some stuff</p>
-                <img src="..." class="img-responsive margin" style="width:100%" alt="Image">
+            <div class="nine columns main-col">
+                <h2>A Little Bit About Me</h2>
+                <p>I was born in India, but moved to the Silicon Valley when I was one year old. I have lived here ever since. My interest in programming began when I was a little kid. Since then, I have taught myself many different languages and applied
+                    my knowledge to various projects. I am looking for unique opportunities in the Bay Area in order to apply my knowledge and gain experience. In my free time, I enjoy biking, hiking, and exploring new places with my peers.</p>
+                <div class="columns download">
+                    <p>
+                        <!--<a href="#" class="button"><i class="fa fa-download"></i>Download Resume</a>-->
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="container-fluid bg-4 text-center">
-        <p>Built By <a href="#">Prashanth Koushik</a></p>
-        <a href="https://www.linkedin.com/in/prashanth-koushik-84a042134/" style="color:#555555">
-            <i class=" fa fa-linkedin-square " aria-hidden="true " style="font-size: 35px"></i>
-        </a>
-        <!--<a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">Send Mail</a>-->
-        <a href="mailto:pkoushik11@gmail.com" style="color:#555555">
-            <i class="fa fa-envelope" aria-hidden="true" style="font-size: 35px"></i>
-        </a>
-        <a href="https://github.com/pkoushik" style="color:#555555">
-            <i class=" fa fa-github " aria-hidden="true" style="font-size: 35px"></i>
-        </a>
+        </div>
+    </section>
+    <section id="resume">
+        <div class="row education">
+            <div class="three columns header-col">
+                <h1><span>Education</span></h1>
+            </div>
+            <div class="nine columns main-col">
+                <div class="row item">
+                    <div class="twelve columns">
+                        <h3>Purdue University</h3>
+                        <p class="info">Computer Science B.S.<span>&bull;</span> <em class="date">Expected: May 2020</em></p>
+                        <p>
+                            I am a rising Sophmore at Purdue University studying Computer Science and pursuing a Minor in Mathematics. I am affiliated with organizations such as Purdue Hackers and Association of Information Technology Professionals at Purdue. I hope to become part
+                            of the executive team for Boilermake, Purdue's Hackathon.
+                        </p>
+                    </div>
+                </div>
+                <div class="row item">
+                    <div class="twelve columns" <h3>Lynbrook High School</h3>
+                        <p class="info">High School Diploma<span>&bull;</span> <em class="date">Graduated June 2016</em></p>
+                        <p>
+                            I graduated from Lynbrook High School in June of 2016. I was affliated with many organizations such as Lynbrook Speech and Debate, the Computer Science Club, and JV Tennis to name a few.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row work">
+            <div class="three columns header-col">
+                <h1><span>Work</span></h1>
+            </div>
+            <div class="nine columns main-col">
+                <div class="row item">
+                    <div class="twelve columns">
+                        <h3>Paybee Inc.</h3>
+                        <p class="info">Software and Web Development Intern<span>&bull;</span> <em class="date">May 2017 - Present</em></p>
+                        <p> Paybee Inc. is a company based in Menlo Park, California working to make donations easy and secure. It aims to bring the donor community and the organizations championing noble causes together on a single platform. My role as a
+                            Software and Web Development Intern, is to redesign the website and aid in the development of the framework for the company. Learn more at <a href="http://www.paybee.io">paybee.io</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- item end -->
+                <div class="row item">
+                    <div class="twelve columns">
+                        <h3>Sphynx Systems</h3>
+                        <p class="info">Environment Development Lead<span>&bull;</span> <em class="date">January 2017 - Present</em></p>
+                        <p>
+                            Currently working on a home automation environment device and system to simplify the user’s experience end to end using Raspberry Pi 3 with an altered version of the Rasbian environment. Taught myself to use MySQL, other databases, and Node.js to store
+                            information necessary to create the system. Currently implementing a simplified user interface to ease the setup of the system.
+                        </p>
+                    </div>
+                </div>
+                <div class="row item">
+                    <div class="twelve columns">
+                        <h3>Lawrence Hall of Science</h3>
+                        <p class="info">Tech Hive Intern<span>&bull;</span> <em class="date">June 2013 - August 2015</em></p>
+                        <p>
+                            Partnered with Tech Hive, an educator of new technology to young childern, as part of a summer internship at the Lawrence Hall of Science. Worked alongside educators and creators to help build exhibits to promote science and technology education.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="row item">
+                        <div class="twelve columns">
+                            <h3>Tech Museum of Innovation</h3>
+                            <p class="info">Tech Intern<span>&bull;</span> <em class="date">June 2013 - December 2015</em></p>
+                            <p>
+                                Worked with a team to manage the exhibits at the museum and explain the technology at each exhibit to guests in order to get them interested in new technologies.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row skills">
+            <div class="three columns header-col">
+                <h1><span>Skills</span></h1>
+            </div>
+        </div>
+        <div class="row skills">
+        </div>
+        <div class="row skills">
+            <div class="skillbar clearfix " data-percent="80%">
+                <div class="skillbar-title" style="background: #aaaaaa;"><span>Java</span></div>
+                <div class="skillbar-bar" style="background: #444444;"></div>
+            </div>
+            <div class="skillbar clearfix " data-percent="95%">
+                <div class="skillbar-title" style="background: #444444;"><span>Python</span></div>
+                <div class="skillbar-bar" style="background: #809696;"></div>
+            </div>
+            <div class="skillbar clearfix " data-percent="70%">
+                <div class="skillbar-title" style="background: #809696;"><span>HTML5/CSS3</span></div>
+                <div class="skillbar-bar" style="background: #d1704e;"></div>
+            </div>
+            <div class="skillbar clearfix " data-percent="50%">
+                <div class="skillbar-title" style="background: #d1704e;"><span>iOS Development</span></div>
+                <div class="skillbar-bar" style="background: #899bcc;"></div>
+            </div>
+            <div class="skillbar clearfix " data-percent="50%">
+                <div class="skillbar-title" style="background: #899bcc;"><span>Android Development</span></div>
+                <div class="skillbar-bar" style="background: #aaaaaa;"></div>
+            </div>
+            <div class="skillbar clearfix " data-percent="75%">
+                <div class="skillbar-title" style="background: #aaaaaa;"><span>C</span></div>
+                <div class="skillbar-bar" style="background: #444444;"></div>
+            </div>
+            <div class="skillbar clearfix " data-percent="60%">
+                <div class="skillbar-title" style="background: #444444;"><span>C++</span></div>
+                <div class="skillbar-bar" style="background: #809696;"></div>
+            </div>
+            <div class="skillbar clearfix " data-percent="40%">
+                <div class="skillbar-title" style="background: #809696;"><span>mySQL</span></div>
+                <div class="skillbar-bar" style="background: #d1704e;"></div>
+            </div>
+            <div class="skillbar clearfix " data-percent="40%">
+                <div class="skillbar-title" style="background: #d1704e;"><span>PHP</span></div>
+                <div class="skillbar-bar" style="background: #899bcc;"></div>
+            </div>
+            <div class="skillbar clearfix " data-percent="100%">
+                <div class="skillbar-title" style="background: #899bcc;"><span>MS Office</span></div>
+                <div class="skillbar-bar" style="background: #aaaaaa;"></div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="row section-head">
+            <div class="two columns header-col">
+                <h1><span>Get In Touch.</span></h1>
+            </div>
+            <div class="ten columns">
+                <p class="lead">If you would like to contact me, please feel free to use the form below or send me an email!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="eight columns">
+                <form action="" method="post" id="contactForm" name="contactForm">
+                    <fieldset>
+                        <div>
+                            <label for="contactName">Name <span class="required">*</span></label>
+                            <input type="text" value="" size="35" id="contactName" name="contactName">
+                        </div>
+                        <div>
+                            <label for="contactEmail">Email <span class="required">*</span></label>
+                            <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+                        </div>
+                        <div>
+                            <label for="contactSubject">Subject</label>
+                            <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
+                        </div>
+                        <div>
+                            <label for="contactMessage">Message <span class="required">*</span></label>
+                            <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+                        </div>
+                        <div>
+                            <button class="submit">Submit</button>
+                            <span id="image-loader">
+                        <img alt="" src="images/loader.gif">
+                     </span>
+                        </div>
+                    </fieldset>
+                </form>
+                <div id="message-warning"> Error boy</div>
+                <div id="message-success">
+                    <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+                </div>
+            </div>
+            <aside class="four columns footer-widgets">
+                <div class="widget widget_contact">
+                    <h4>Contact Details</h4>
+                    <p class="address">
+                        Prashanth Koushik
+                        <!--<span>(408)-859-9808</span>-->
+                        <br>pkoushik11@gmail.com
+                    </p>
+                </div>
+                <!--<div class="widget widget_tweets">
+                    <h4 class="widget-title">Latest Tweets</h4>
+                    <ul id="twitter">
+                        <li>
+                            <span>
+                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                        Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum
+                        <a href="#">http://t.co/CGIrdxIlI3</a>
+                        </span>
+                            <b><a href="#">2 Days Ago</a></b>
+                        </li>
+                        <li>
+                            <span>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                        eaque ipsa quae ab illo inventore veritatis et quasi
+                        <a href="#">http://t.co/CGIrdxIlI3</a>
+                        </span>
+                            <b><a href="#">3 Days Ago</a></b>
+                        </li>
+                    </ul>
+                </div>-->
+            </aside>
+        </div>
+    </section>
+    <footer>
+        <div class="row">
+            <div class="twelve columns">
+                <ul class="social-links">
+                    <li><a href="https://www.linkedin.com/in/prashanth-koushik-84a042134/"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="mailto:pkoushik11@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                    <li><a href="https://github.com/pkoushik"><i class="fa fa-github"></i></a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>Built By <a href="https://pkoushik.me">Prashanth Koushik</a></li>
+                </ul>
+            </div>
+            <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+        </div>
     </footer>
-
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')
+    </script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/waypoints.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/magnific-popup.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/jquery.js"></script>
 </body>
 
 </html>
